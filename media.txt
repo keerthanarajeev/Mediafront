@@ -1,0 +1,72 @@
+
+
+Create a web application using react js with below problem statements
+
+1.User can create add delete edit
+
+2.The card must contain name and a video / a mp3 link
+
+3.the user has the flexibility to create bucket to categorize and card according to his/her choice
+
+4.User can move a caed to different bucket
+
+5.on clicking on the card a model with a iframe should open with start playing video
+
+6.User can create and delete a card or multiple card under a single bucket at once
+
+7.There should be a seperate tab called hystory which list the mp3/mp4 links that you have played
+
+    i.e  the card name the link and the item was played
+
+    tech stack
+
+    ----------------------
+
+    1.front end      : react.js
+
+    2.back-end       : create and use json server
+
+
+
+ Features - Axion library
+ --------------------------
+
+
+Make XMLHttpRequests from the browser
+Make http requests from node.js
+Supports the Promise API
+Intercept request and response
+Transform request and response data
+Cancel requests
+Automatic transforms for JSON data
+🆕 Automatic data object serialization to multipart/form-data and x-www-form-urlencoded body encodings
+Client side support for protecting against XSRF
+
+
+Request Config
+-------------
+
+These are the available config options for making requests. Only the url is required. Requests will default to GET if method is not specified.
+
+ // `url` is the server URL that will be used for the request
+  url: '/user',
+
+  // `method` is the request method to be used when making the request
+  method: 'get', // default
+
+    // `headers` are custom headers to be sent
+  headers: {'X-Requested-With': 'XMLHttpRequest'},
+
+    // `data` is the data to be sent as the request body
+  // Only applicable for request methods 'PUT', 'POST', 'DELETE , and 'PATCH'
+  // When no `transformRequest` is set, must be of one of the following types:
+  // - string, plain object, ArrayBuffer, ArrayBufferView, URLSearchParams
+  // - Browser only: FormData, File, Blob
+  // - Node only: Stream, Buffer, FormData (form-data package)
+  data: {
+    firstName: 'Fred'
+  },     
+
+  Data sharing from child to child
+
+  Data sharing can be done frm parent to child only. if we want to share data from child to child, state lifting can be used. first create a state in parent and the data to be shared is assigned to that state
